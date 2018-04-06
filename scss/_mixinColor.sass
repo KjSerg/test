@@ -1,0 +1,18 @@
+=circle($width, $height, $borderRadius) 
+  width: $width
+  height: $height
+  line-height: $height
+  border-radius: $borderRadius
+  -webkit-border-radius: $borderRadius
+  -moz-border-radius: $borderRadius
+  -ms-border-radius: $borderRadius
+
+=border($direction, $borderSize, $borderColor) 
+  @if $direction == 'all'
+    border: $borderSize solid $borderColor
+  @else
+    border-#{$direction}: $borderSize solid $borderColor
+  
+  
+  
+

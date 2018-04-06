@@ -1,0 +1,758 @@
+@import "oneStyle"
+// @import "mixinColor";
+// @import "slick";
+// @import "slickTheme";
+// @import "jquery.fancybox.min";
+// @import "jquery-ui";
+
+body
+	// height: 2200px
+	// width: 1920px
+	padding-bottom: 85px
+	&.register
+		padding: 0
+	position: relative
+	-ms-overflow-x: hidden 
+	overflow-x: hidden 
+	background: #010417 
+	// background: rgba(14,40,93,1)
+	// background: linear-gradient(to right, rgba(14,40,93,1) 0%, rgba(125,164,188,1) 100%)
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e285d', endColorstr='#7da4bc', GradientType=1 )
+	// background: linear-gradient(to right, rgba(1,5,24,1) 0%, rgba(1,4,23,1) 0%, rgba(1,4,23,1) 20%, rgba(0,16,65,1) 38%, rgba(14,40,95,1) 46%, rgba(54,98,148,1) 78%, rgba(107,150,181,1) 99%, rgba(107,150,181,1) 100%)
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010518', endColorstr='#6b96b5', GradientType=1 )
+	background: linear-gradient(135deg, rgba(1,5,24,1) 0%, rgba(1,4,23,1) 0%, rgba(1,4,23,1) 16%, rgba(0,16,65,1) 40%, rgba(14,40,95,1) 54%, rgba(54,98,148,1) 78%, rgba(107,150,181,1) 99%, rgba(107,150,181,1) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010518', endColorstr='#6b96b5', GradientType=1 )
+	
+.clearfix:before
+  content: ""
+  display: table
+  
+.clearfix:after
+  content: ""
+  display: table
+
+.clearfix:after
+  clear: both
+
+.bg-one
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 1469px
+	// background-image: url(../images/bg1111.png)
+	z-index: -1
+	background-repeat: no-repeat
+	-webkit-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+.enterRegister
+	background-image: url(../images/bg-form-r.jpg)
+	-webkit-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	min-height: 100vh
+	width: 100%
+	padding-top: 50px
+	padding-bottom: 50px
+	&-box
+		padding: 45px 42px 50px 42px
+		background-color: rgba(0,0,0,0.3)
+		width: 572px
+		margin: 0 auto
+		&__logo
+			margin-bottom: 58px
+			text-align: center
+		&__title
+			color: #FFF 
+			margin-bottom: 58px
+			text-align: center
+			font-size: 30px
+		&__soc
+			display: inline-flex
+			margin-bottom: 65px
+			.soc
+				float: left
+				width: 83px
+				height: 83px
+				background-position: center
+				background-repeat: no-repeat
+				margin-right: 16px
+				&:last-child
+					margin-right: 0
+				&.fb
+					background-image: url(../images/fb.png)
+				&.soc2
+					background-image: url(../images/soc2.png)
+				&.inst
+					background-image: url(../images/inst.png)
+				&.tw
+					background-image: url(../images/twit.png)
+				&.googl
+					background-image: url(../images/googl.png)
+				&:hover
+					filter: opacity(85%)
+		&__em
+			text-align: center
+			color: #FFF 
+			font-size: 24px
+			margin-bottom: 50px
+		&__form
+			.after
+				position: relative
+				height: 54px
+				margin-bottom: 10px
+				&:after
+					content: ''
+					display: inline-block
+					position: absolute
+					background-repeat: no-repeat
+					background-position: center
+					width: 78px
+					height: 54px
+					left: 10px
+			.emailAfter:after
+				background-image: url(../images/email.png) 
+			.passwordAfter:after
+				background-image: url(../images/passw.png) 
+			.inpt
+				width: 100%
+				height: 54px
+				line-height: 54px
+				border: 2px solid #79828a 
+				padding-left: 105px
+				padding-right: 10px
+				background: transparent 
+				font-size: 28px
+				color: #a7abae 
+			.fp
+				display: inline-block
+				width: 100%
+				text-align: right
+				color: #A7AAAD 
+				text-decoration: underline
+				font-size: 14px
+				font-weight: 300
+		&__btn
+			display: inline-block
+			margin-top: 38px
+			margin-bottom: 75px
+			width: 305px
+			height: 62px
+			line-height: 62px
+			background: #39C 
+			color: #fff 
+			font-weight: 600 
+			font-size: 24px
+			text-align: center
+			text-transform: uppercase
+			margin-left: calc((100% - 305px) / 2) 
+		&__bot
+			text-align: center
+			font-size: 14px
+			color: #A5A7A9 
+			a
+				text-decoration: underline
+				color: #A5A7A9 
+  		
+.container
+	width: 1675px
+	margin: 0 auto
+.hide
+	display: none
+.hide-sidebar
+	display: inline-block
+	width: 19px
+	height: 30px
+	background-image: url(../images/arrl.png) 
+	position: absolute
+	top: 250px
+	left: 70px
+.header
+	padding-top: 18px 
+	padding-bottom: 18px
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	width: 100%
+	&-logIn
+		width: 185px
+		display: inline-flex
+		font-size: 18px
+		line-height: 40px
+		span
+			color: #81838a 
+		&__item
+			display: inline-block
+			padding: 0 9px
+			color: #FFF 
+			text-decoration: none
+			&.set
+				background-image: url(../images/set.png)
+				background-position: center
+				background-repeat: no-repeat
+				width: 33px
+				height: 33px 
+			&:hover
+				color: #00a7df 
+	&-icons
+		display: inline-flex
+		width: 190px
+		margin-left: 90px
+		margin-right: 185px
+		&__item
+			display: inline-block
+			width: 32px
+			height: 32px
+			background-repeat: no-repeat
+			background-position: center
+			margin-right: 20px
+			&:last-child
+				margin-right: 0
+			&.item1
+				background-image: url(../images/icon1.png) 
+			&.item2
+				background-image: url(../images/icon2.png)
+			&.item3
+				background-image: url(../images/icon3.png)
+			&.item4
+				background-image: url(../images/icon4.png)
+	&-box
+		display: inline-flex
+	&-logo
+		width: 284px
+		img
+			max-width: 100%
+	&-serch
+		width: 700px
+		margin-right: 40px
+		position: relative
+		&__btn
+			display: inline-block
+			position: absolute
+			width: 33px
+			height: 33px
+			background-image: url(../images/search.png) 
+			background-color: transparent
+			background-position: center
+			background-repeat: no-repeat
+			left: 0
+			top: 0
+		input
+			width: 100%
+			background: transparent 
+			height: 34px
+			line-height: 34px
+			outline: none 
+			padding-left: 40px
+
+.col-3x
+	width: 33%
+	
+.circle
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		display: inline-block
+		width: 18px
+		height: 18px
+		-webkit-border-radius: 50% 
+		border-radius: 50% 
+		border: 3px solid #fff
+		background: #00B7F4 
+		top: 0
+		right: 0
+		
+.vase
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		display: inline-block
+		width: 14px
+		height: 26px
+		background-image: url(../images/vase.png) 
+		background-repeat: no-repeat
+		background-position: center
+		bottom: 5px
+		right: -60px
+	&.vase.active:before
+		background-image: url(../images/vase1.png) 
+
+.bell
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		display: inline-block
+		background-image: url(../images/bell.png)
+		background-position: center
+		width: 12px
+		height: 14px
+		right: -14px
+		top: 14px
+		background-repeat: no-repeat
+		
+.mCSB_inside > .mCSB_container
+	display: inline-flex
+	width: 100%
+	flex-wrap: wrap
+.sidebar
+	padding-top: 115px
+	color: #FFF 
+	width: 240px
+	&.hide
+		display: none
+	&-title
+		font-size: 24px
+		font-weight: 600
+		margin-bottom: 20px
+	
+	&-top
+		&__box
+			display: inline-flex
+			.avatar
+				display: inline-block
+				width: 63px
+				height: 63px
+				line-height: 63px
+				text-align: center
+				vertical-align: middle
+				overflow: hidden
+				-webkit-border-radius: 50% 
+				border-radius: 50%
+				margin-right: 10px
+				img
+					max-width: 100% 
+			.name
+				font-weight: 600 
+				font-size: 24px
+				line-height: 65px
+		&__text
+			width: 100%
+			height: 50px
+			font-size: 14px
+			overflow: hidden
+			line-height: 17px
+			text-align: justify
+			margin-top: 15px
+	
+	&-friends
+		margin-top: 80px
+		
+		&__box
+			display: inline-flex
+			width: 100%
+			flex-wrap: wrap
+			height: 234px
+			overflow: hidden
+			margin-bottom: 30px
+		&__item
+			text-align: center
+			font-weight: 300
+			font-size: 18px
+			margin-bottom: 20px 
+			.ava
+				display: inline-block
+				width: 60px
+				height: 60px
+				line-height: 60px
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				// overflow: hidden
+				// margin-left: calc((100% - 60px)/2) 
+				img
+					max-width: 100% 
+					-webkit-border-radius: 50% 
+					border-radius: 50% 
+	
+	&-cards
+		margin-bottom: 30px
+		display: none
+		&.show
+			display: inline-block
+		&__item
+			width: 100%
+			height: 116px
+			-webkit-border-radius: 30px 
+					 border-radius: 30px 
+			overflow: hidden
+			margin-bottom: 10px
+			img
+				max-width: 100% 
+
+	&-recomend
+		display: inline-block
+		font-weight: 600
+		font-size: 18px
+		color: #fff 
+		text-decoration: none
+		padding-left: 90px
+		position: relative
+		background-image: url(../images/rf.png)
+		background-repeat: no-repeat
+		margin-bottom: 70px
+		&.recomend-groups
+			background-image: url(../images/rf1.png)
+
+	&-groups
+		&__item
+			margin-bottom: 30px
+			.avatar
+				width: 60px
+				height: 60px
+				text-align: center
+				vertical-align: middle
+				overflow: hidden
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+		&__box
+			display: inline-flex
+			width: 100%
+			flex-wrap: wrap
+
+.bg
+	position: relative
+	&:after
+		content: '';
+		display: inline-block
+		background: url(../images/bg22222.png)
+		position: absolute
+		width: 1920px
+		height: 1828px
+		top: -1100px
+		left: -370px
+		-webkit-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		background-repeat: no-repeat
+		-ms-background-position-y: 100px 
+		background-position-y: 100px 
+		// box-shadow: inset 200px -200px 208px -131px rgba(42,71,117,1)
+.videoWrap
+	position: absolute
+	right: 0
+	top: 0
+	z-index: -1
+	width: 1550px
+	height: 1100px
+	
+	iframe, video
+		width: 100%
+		height: 100%
+		margin-top: -220px
+		
+
+.container-flex
+	display: inline-flex
+	width: 100%
+
+.content
+	padding-top: 240px
+	margin-left: 70px
+	color: #FFF 
+	width: 80%
+	.sliderWrap
+		width: 520px
+		margin-bottom: 240px
+		.slick-dots li button::before
+			content: ""
+			width: 11px
+			height: 11px
+			opacity: 1 
+			-webkit-border-radius: 50% 
+			border-radius: 50% 
+			background: transparent 
+			border: 3px solid #fff
+		.slick-dots li.slick-active button:before
+			background-color: #FFF 
+		&-slide
+			&__title
+				font-weight: 700
+				font-size: 30px
+				margin-bottom: 30px
+			&__text
+				font-size: 18px
+				line-height: 24px
+
+	.bannerWrap
+		width: 100%
+		-webkit-border-radius: 20px 
+		border-radius: 20px 
+		position: relative
+		height: 362px
+		overflow: hidden
+		margin-bottom: 18px
+		&-title
+			width: 100%
+			height: 62px
+			line-height: 62px
+			text-align: center
+			position: absolute
+			left: 0
+			bottom: 0
+			font-size: 18px
+			background-color: rgba(0,0,0,0.5) 
+		&-header
+			position: absolute
+			padding: 0 20px 
+			top: 0
+			left: 0
+			width: 100%
+			height: 64px
+			background-color: rgba(0,0,0,0.5) 
+			.avatar-ban
+				width: 60px
+				height: 60px
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				overflow: hidden
+				margin-top: 13px
+				float: left
+				margin-right: 350px
+			.links
+				float: left
+				line-height: 64px
+				.links-item
+					color: #FFF 
+					font-size: 18px
+					text-decoration: none
+					display: inline-block
+					margin-right: 15px
+					background-repeat: no-repeat
+					background-position: left 
+					&.views
+						background-image: url(../images/views.png) 
+						padding-left: 60px
+					&.likes
+						background-image: url(../images/like.png) 
+						padding-left: 40px
+					&.shares
+						background-image: url(../images/shrs.png) 
+						padding-left: 36px
+			.time
+				display: inline-block
+				float: right
+				margin-top: 11px
+				width: 40px
+				height: 40px
+				background-image: url(../images/time.png)
+
+	.newsWrap
+		padding: 50px 175px 20px 24px
+		-webkit-border-radius: 20px 
+		border-radius: 20px 
+		background-color: rgba(255,255,255,0.2)  
+		&-item
+			display: inline-flex
+			width: 100%
+			margin-bottom: 20px
+			.comentsBody
+				width: 95%
+			&__body
+				width: 80%
+			&__comentsWrap
+				display: inline-flex
+				width: 100%
+			&__avatar
+				width: 60px
+				height: 60px
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				overflow: hidden
+				margin-right: 13px
+				text-align: center
+				img
+					max-width: 100% 
+			&__comentsContainer
+				padding: 20px
+				-webkit-border-radius: 20px 
+				 border-radius: 20px 
+				margin-top: 20px 
+				background-color: rgba(255,255,255,0.1) 
+			&__content
+				width: 100%
+				.title
+					font-size: 18px
+					font-weight: 700
+					margin-bottom: 14px 
+				.text
+					font-size: 14px
+					text-align: justify
+					margin-bottom: 15px
+					line-height: 20px
+				.soc
+					text-align: right
+					a
+						color: #FFF 
+						text-decoration: none
+						font-size: 14px
+						&:hover
+							text-decoration: underline
+	
+	.content-left
+		width: 100%
+
+	&.open-chat-box
+		display: inline-flex
+		.content-rgt
+			padding-top: 400px
+			margin-left: 20px
+			.chatWrap
+				-webkit-border-radius: 20px 
+				border-radius: 20px 
+				padding: 80px 30px 100px 30px
+				background-color: rgba(255,255,255,0.2)  
+				&-messBox
+					margin-bottom: 25px
+					&:first-child .chatWrap-messBox__text
+						background-color: rgba(255,255,255,0.5) 
+					&__avatar
+						width: 60px
+						height: 60px
+						text-align: center
+						-webkit-border-radius: 50% 
+						border-radius: 50% 
+						overflow: hidden
+						float: left
+						margin-top: 18px
+					&__text
+						padding: 10px 30px
+						width: 85%
+						float: right
+						-webkit-border-radius: 20px 
+						border-radius: 20px 
+						background-color: rgba(255,255,255,0.1) 
+						&:first-child
+							background-color: rgba(255,255,255,0.5) 
+						.title
+							font-size: 24px
+							font-weight: 600
+							margin-bottom: 15px
+						.mess
+							font-size: 18px
+							line-height: 24px
+				&-head
+					margin-top: 30px
+					text-align: center
+					margin-bottom: 45px
+					a
+						color: #FFF 
+						text-decoration: none
+						font-size: 18px
+						font-weight: 600 
+						&:hover
+							text-decoration: underline
+				&-top
+					padding-left: 80px
+					&__line
+						width: 80%
+						float: left
+						border-top: 2px solid #a0b2ca
+					&__arr
+						display: inline-block
+						float: right
+						width: 19px
+						height: 12px
+						background-image: url(../images/arrb.png)
+		.content-left, .content-rgt
+			width: 50%
+			// transition-duration: 0.1s
+			// transition-timing-function: linear
+		.content-left
+			.avatar-ban
+				margin-right: 10px
+			.newsWrap
+				padding-right: 20px
+
+	.formCom
+		width: 100%
+		position: relative
+		margin-top: 20px  
+		.smile
+			position: absolute
+			display: inline-block
+			width: 30px
+			height: 26px
+			background-image: url(../images/smile.png)
+			top: 20px
+			right: 170px
+			background-repeat: no-repeat
+			background-position: center
+		.file-container
+			background-repeat: no-repeat
+			background-position: center
+			width: 30px
+			height: 24px
+			display: inline-block
+			position: absolute
+			top: 20px
+			&.foto
+				background-image: url(../images/foto.png)
+				right: 120px
+			&.file
+				background-image: url(../images/file.png)
+				right: 80px
+			input
+				display: none
+		.comment
+			width: 100%
+			height: 70px
+			line-height: 70px
+			font-size: 18px
+			color: #FFF 
+			-webkit-border-radius: 20px 
+			border-radius: 20px 
+			outline: none
+			padding: 0 200px 0 70px
+			background-color: rgba(255,255,255,0.4) 
+			&:-ms-input-placeholder 
+				color: #fff
+			&:-moz-placeholder
+				color: #fff
+			&::-moz-placeholder
+				color: #fff
+			&::-webkit-input-placeholder
+				color: #fff
+.accordion-title
+	cursor: pointer;
+.open-chat
+	display: inline-block
+	width: 39px
+	height: 36px
+	background-repeat: no-repeat
+	background-position: center
+	background-image: url(../images/open-chat.png) 
+	float: right
+	margin-top: 50px
+	position: absolute
+	right: 60px
+	bottom: 20px
+
+.sidebar-close
+	.hide-sidebar
+		left: 70px
+		top: 250px
+	.content
+		width: 100%
+		.bannerWrap
+			img
+				width: 100%
+	&.chat-open .content .bannerWrap img
+		width: inherit 
+
+.mCSB_scrollTools .mCSB_draggerContainer
+	left: 12px
+
+#mCSB_1_dragger_vertical
+	height: 50px!important
+.mCSB_scrollTools .mCSB_draggerRail
+	background-color: rgba(0,0,0,0.0)
+
+// @import "media";
