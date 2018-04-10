@@ -40,6 +40,7 @@ $(function () {
 		slidesToShow: 1
 	});
 	$(".sidebar-friends__box").mCustomScrollbar();
+	$(".filmWrap .scrollCast").mCustomScrollbar();
 	$('.videoWrap iframe').click();
 	$('.sidebar-cards__item a').hover(function() {
 		/* Stuff to do when the mouse enters the element */
@@ -64,6 +65,7 @@ $(function () {
 	$('.open-chat').click(function(event) {
 		/* Act on the event */
 		event.preventDefault();
+		$(this).toggleClass('active');
 		$(this).parent('.content').toggleClass('open-chat-box');
 		$(this).parent('.content').find('.content-rgt').toggle();
 		$(this).parents('body').toggleClass('chat-open');
@@ -123,6 +125,13 @@ $(function () {
 	$('canvas').attr({
 		"width": '336px',
 		"height": '336px'
-	});;
+	});
+	$('.header-icons__item').hover(function() {
+		$(this).append('<div class="hov"></div>');
+		$(this).find('.hov').text($(this).attr('data-text'));
+	}, function() {
+		/* Stuff to do when the mouse leaves the element */
+		$(this).find('.hov').remove();
+	});
 
 });

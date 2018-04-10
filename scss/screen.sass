@@ -179,6 +179,9 @@ body
 	position: absolute
 	top: 250px
 	left: 70px
+	opacity: 0.2
+	&:hover
+		opacity: 1 
 .header
 	padding-top: 18px 
 	padding-bottom: 18px
@@ -219,6 +222,7 @@ body
 			background-repeat: no-repeat
 			background-position: center
 			margin-right: 20px
+			position: relative
 			&:last-child
 				margin-right: 0
 			&.item1
@@ -470,6 +474,7 @@ body
 	margin-left: 70px
 	color: #FFF 
 	width: 80%
+	margin: 0 auto
 	.sliderWrap
 		width: 520px
 		margin-bottom: 240px
@@ -614,6 +619,7 @@ body
 		display: inline-flex
 		.content-rgt
 			padding-top: 400px
+			position: relative
 			margin-left: 20px
 			.chatWrap
 				-webkit-border-radius: 20px 
@@ -742,16 +748,27 @@ body
 	cursor: pointer;
 .open-chat
 	display: inline-block
-	width: 39px
-	height: 36px
+	width: 60px
+	height: 60px
 	background-repeat: no-repeat
 	background-position: center
-	background-image: url(../images/open-chat.png) 
+	
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	text-align: center
+	vertical-align: middle
+	line-height: 80px
+	-webkit-border-radius: 50% 
+	border-radius: 50% 
 	float: right
 	margin-top: 50px
 	position: absolute
 	right: 60px
 	bottom: 20px
+	&.active
+		background-image: url(../images/bg-11111.png) 
+		box-shadow: 0px 0px 84px 8px rgba(82,123,163,1);
 
 .sidebar-close
 	.hide-sidebar
@@ -1010,6 +1027,8 @@ body
 	border-radius: 20px 
 	padding: 80px 30px 100px 30px
 	background-color: rgba(255,255,255,0.2)  
+	position: absolute
+	bottom: 0
 	&-messBox
 		margin-bottom: 25px
 		&:first-child .chatWrap-messBox__text
@@ -1062,5 +1081,64 @@ body
 			width: 19px
 			height: 12px
 			background-image: url(../images/arrb.png)
+			
+.filmWrap
+	.mCSB_scrollTools .mCSB_draggerRail
+		width: 14px
+	.mCustomScrollBox
+		-ms-overflow-x: visible 
+		overflow-x: visible 
+		&::-webkit-scrollbar
+			display: none
+	.mCSB_dragger
+		height: 57px!important
+		background-color: #1A4B76 
+	.mCSB_scrollTools .mCSB_draggerRail
+		background-color: rgba(255,255,255,0.2) 
+	.chatWrap
+		width: 700px 
+		// height: 800px
+		-ms-overflow-y: hidden 
+		overflow-y: hidden 
+		position: static
+		.scrollCast
+			height: 600px
+			-ms-overflow-y: hidden 
+			overflow-y: hidden 
+	.links
+		text-align: right
+		margin-top: 20px
+		a
+			color: #FFF 
+			text-decoration: none
+			font-size: 14px
+			&:hover
+				text-decoration: underline
+	.chatWrap-messBox .chatWrap-messBox__text
+				background: none
+	.coments
+		margin-top: 10px
+		padding: 20px 
+		-webkit-border-radius: 20px 
+		border-radius: 20px 
+		background-color: rgba(255,255,255,0.2)
+		.chatWrap-messBox
+			margin-bottom: 0
+		.chatWrap-messBox__text
+			padding: 10px
+
+
+.hov
+	position: absolute
+	left: 0
+	bottom: -25px
+	width: 150px
+	text-align: center
+	-webkit-border-radius: 10px 
+	border-radius: 10px 
+	font-size: 14px
+	line-height: 20px
+	color: #FFF
+	background-color: rgba(0,0,0,0.5)  
 
 // @import "media";
