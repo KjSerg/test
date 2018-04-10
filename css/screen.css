@@ -1135,3 +1135,14 @@ body {
       width: 19px;
       height: 12px;
       background-image: url(../images/arrb.png); }
+
+.filmWrap .links {
+  text-align: right; }
+  .filmWrap .links a {
+    color: #FFF;
+    text-decoration: none; }
+    .filmWrap .links a:hover {
+      text-decoration: underline; }
+
+.filmWrap .chatWrap-messBox .chatWrap-messBox__text {
+  background: none; }
