@@ -240,3 +240,62 @@
 
 .custom-text {
   font-size: 24px; }
+
+.group__file {
+  max-width: 210px;
+  height: auto;
+  max-height: 200px;
+  background-image: url(/images/preavatar.png);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-background-size: cover !important;
+          background-size: cover !important;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  background-position: center; }
+  .group__file input {
+    width: 100%;
+    opacity: 0;
+    height: 200px;
+    display: block; }
+
+.group__left {
+  width: 40%;
+  padding: 0px 45px 0px 90px; }
+
+.group__right {
+  width: 60%;
+  padding: 0px 90px 0px 45px; }
+
+.group__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.group__lists .sidebar-friends__item .ava {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  line-height: 70px; }
+
+.group__lists .sidebar-friends__item .ava img {
+  width: 100%; }
+
+.sidebar-friends__box-forth {
+  height: 192px; }
+
+.sidebar-cards-inline .sidebar-cards__item {
+  width: 32%;
+  max-width: 180px;
+  height: auto;
+  display: inline-block; }
