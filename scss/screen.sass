@@ -6,11 +6,18 @@
 // @import "jquery-ui";
 
 body
-	// height: 2200px
+	// min-height: 1200px
 	// width: 1920px
 	padding-bottom: 85px
+	&.search
+		min-height: 1200px
 	&.register
 		padding: 0
+		// height: 100vh 
+	&.page-film
+		background: rgba(75,122,165,1)
+		background: linear-gradient(45deg, rgba(75,122,165,1) 0%, rgba(75,122,165,1) 0%, rgba(21,52,108,1) 38%, rgba(2,8,30,1) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b7aa5', endColorstr='#02081e', GradientType=1 )
 	position: relative
 	-ms-overflow-x: hidden 
 	overflow-x: hidden 
@@ -253,7 +260,10 @@ body
 
 .col-3x
 	width: 33%
-	
+.col-2x
+	width: 50%
+.col-4x
+	width: 25%
 .circle
 	position: relative
 	&:after
@@ -282,6 +292,8 @@ body
 		background-position: center
 		bottom: 5px
 		right: -60px
+	&.vase-one:before
+		right: -140px
 	&.vase.active:before
 		background-image: url(../images/vase1.png) 
 
@@ -598,7 +610,6 @@ body
 	
 	.content-left
 		width: 100%
-
 	&.open-chat-box
 		display: inline-flex
 		.content-rgt
@@ -666,6 +677,13 @@ body
 			// transition-duration: 0.1s
 			// transition-timing-function: linear
 		.content-left
+			.searchWrap-filter.active
+				width: 100%
+			.searchWrap-content__box
+				width: 100%
+			.col-4x
+				width: 48%
+				margin-left: 10px
 			.avatar-ban
 				margin-right: 10px
 			.newsWrap
@@ -754,5 +772,295 @@ body
 	height: 50px!important
 .mCSB_scrollTools .mCSB_draggerRail
 	background-color: rgba(0,0,0,0.0)
+.searchWrap
+	&-filter
+		display: none
+		&.active
+			display: inline-block
+			padding: 20px 80px
+			background-color: rgba(0,0,0,0.5)  
+			width: 1090px
+			margin: 0 auto
+			-webkit-border-radius: 20px 
+			 border-radius: 20px  
+			margin-top: 20px
+			li
+				width: 16.5%
+				float: left
+				a
+					color: #FFF 
+					line-height: 36px
+					text-decoration: none
+					&:hover
+						color: #00b7f4 
+
+	&-tabs
+		&__item
+			display: inline-block
+			float: left
+			margin-right: 60px
+			font-size: 16px
+			&.arr:after
+				content: ""
+				display: inline-block
+				background-image: url(../images/arr1.png)
+				width: 10px
+				height: 5px 
+			i
+				display: inline-block
+				width: 12px
+				height: 12px
+				border: 3px solid #fff
+				margin-right: 9px
+				-webkit-border-radius: 50% 
+				 border-radius: 50%  
+			input
+				display: none
+				&:checked + i
+					background-color: #FFF 
+	
+	&-content
+		width: 100%
+		display: inline-flex
+		margin-top: 50px
+		flex-wrap: wrap
+		display: none
+		&.active
+			display: inline-flex
+		&__box
+			width: 328px 
+			height: 260px
+			-webkit-border-radius: 20px 
+			border-radius: 20px 
+			overflow: hidden
+			margin-bottom: 20px
+			position: relative
+			.slider-video.slider
+				width: 350px
+				height: 300px 
+			.slick-dots li button::before
+				content: "";
+				width: 9px;
+				height: 9px;
+				opacity: 1;
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+				background: transparent;
+				border: 3px solid #fff;
+			.slick-dots li.slick-active button:before
+				background-color: #FFF;
+			.slick-dots
+				bottom: 50px
+			.vid iframe, .vid video, .slider-video iframe, slider-video video
+				width: 400px
+				height: 300px
+			.like
+				width: 32px
+				height: 33px
+				background-image: url(../images/ld.png)
+				position: absolute
+				bottom: 10px
+				right: 17px
+				z-index: 2
+			.namber
+				width: 36px
+				height: 36px
+				-webkit-border-radius: 50% 
+				 border-radius: 50%  
+				text-align: center
+				line-height: 36px
+				position: absolute
+				left: 15px
+				bottom: 10px
+				background: #ff0b00 
+				z-index: 2
+			.head 
+				padding-left: 10px
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				z-index: 2
+				.avatar
+					display: inline-block
+					width: 60px
+					height: 60px
+					-webkit-border-radius: 50% 
+					border-radius: 50% 
+					text-align: center
+					vertical-align: middle
+					position: relative
+					margin-right: 10px
+					&.blue:after
+						content: "" 
+						position: absolute
+						width: 12px
+						height: 12px
+						-webkit-border-radius: 50% 
+						border-radius: 50% 
+						background-color: #00b7f4 
+						border: 1px solid #fff 
+						right: 0
+						top: 0
+					img
+						max-width: 100% 
+						-webkit-border-radius: 50% 
+						border-radius: 50% 
+		
+		&.tab-flms
+			.vase
+				display: inline-block
+				float: right
+				&:before
+					bottom: 0
+					right: 20px
+			.title
+				font-size: 22px
+				text-align: center
+				font-weight: 600 
+				padding-top: 10px
+			.text
+				font-size: 14px
+				color: #FFF 
+				text-align: justify
+				height: 40px
+				padding: 0 20px 
+				overflow: hidden
+				position: absolute
+				bottom: 30px
+				width: 100%
+				left: 0
+			.head-bot
+				width: 100%
+				height: 40px
+				line-height: 40px
+				position: absolute
+				top: 42px
+				left: 0
+				background-color: rgba(0,0,0,0.5) 
+				a
+					display: inline-block
+					color: #FFF
+					font-size: 14px
+					float: left
+					margin-right: 15px
+					background-position: left
+					background-repeat: no-repeat
+					text-decoration: none
+					padding-left: 26px
+					&.views
+						background-image: url(../images/v.png);
+					&.likes
+						background-image: url(../images/lk.png);
+					&.shares
+						background-image: url(../images/sh.png);
+						
+.filmWrap
+	display: inline-flex
+	width: 100%
+	flex-wrap: wrap
+	color: #FFF 
+	&-left
+		.title
+			font-weight: 600
+			font-size: 24px
+			text-align: center
+			margin-bottom: 48px
+		.timer
+			width: 336px
+			height: 336px
+			margin: 0 auto
+			 
+			.demo
+				width: 100%
+				height: 100% 
+	&-video
+		width: 568px
+		height: 414px
+		margin: 0 auto 
+		-webkit-border-radius: 20px 
+		border-radius: 20px 
+		overflow: hidden
+		margin-bottom: 60px
+		video, iframe
+			width: 100%
+			height: 100%
+	&-rgt
+		&__buttons
+			margin-bottom: 30px
+			.btn
+				display: inline-block
+				width: 194px
+				height: 48px
+				line-height: 48px
+				-webkit-border-radius: 10px 
+				border-radius: 10px 
+				background: #00B7F4 
+				color: #fff
+				text-align: center
+				text-decoration: none
+				margin-left: 22px
+				font-weight: 700 
+				&:hover, &.active
+					background: #fff
+					color: #030C26   
+					
+.chatWrap
+	-webkit-border-radius: 20px 
+	border-radius: 20px 
+	padding: 80px 30px 100px 30px
+	background-color: rgba(255,255,255,0.2)  
+	&-messBox
+		margin-bottom: 25px
+		&:first-child .chatWrap-messBox__text
+			background-color: rgba(255,255,255,0.5) 
+		&__avatar
+			width: 60px
+			height: 60px
+			text-align: center
+			-webkit-border-radius: 50% 
+			border-radius: 50% 
+			overflow: hidden
+			float: left
+			margin-top: 18px
+		&__text
+			padding: 10px 30px
+			width: 85%
+			float: right
+			-webkit-border-radius: 20px 
+			border-radius: 20px 
+			background-color: rgba(255,255,255,0.1) 
+			&:first-child
+				background-color: rgba(255,255,255,0.5) 
+			.title
+				font-size: 24px
+				font-weight: 600
+				margin-bottom: 15px
+			.mess
+				font-size: 18px
+				line-height: 24px
+	&-head
+		margin-top: 30px
+		text-align: center
+		margin-bottom: 45px
+		a
+			color: #FFF 
+			text-decoration: none
+			font-size: 18px
+			font-weight: 600 
+			&:hover
+				text-decoration: underline
+	&-top
+		padding-left: 80px
+		&__line
+			width: 80%
+			float: left
+			border-top: 2px solid #a0b2ca
+		&__arr
+			display: inline-block
+			float: right
+			width: 19px
+			height: 12px
+			background-image: url(../images/arrb.png)
 
 // @import "media";
