@@ -133,7 +133,7 @@ $(function () {
 		$(this).append('<div class="hov"></div>');
 		$(this).find('.hov').text($(this).attr('data-text'));
 	}, function() {
-		/* Stuff to do when the mouse leaves the element */
+		/* Stuff to do when the mouse leaves the element 90*/
 		$(this).find('.hov').remove();
 	});
 	$('.header-serch').submit(function(event) {
