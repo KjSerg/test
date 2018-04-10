@@ -72,6 +72,9 @@ $(function () {
 		if ($('body').hasClass('page-film')) {
 			$(this).parents('body.page-film').find('.filmWrap .filmWrap-rgt').parents('.col-2x').toggle();
 		}
+		if ($('body').hasClass('page-rew')) {
+			$(this).parents('body.page-rew').find('.reviewBox-filter').toggle();
+		}
 	});
 	$('.hide-sidebar').click(function(event) {
 		/* Act on the event */
