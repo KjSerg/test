@@ -418,6 +418,23 @@ body
 			background-image: url(../images/rf1.png)
 
 	&-groups
+		.sidebar-title
+			position: relative
+			.addGroups
+				// content: "+"
+				display: inline-block
+				position: absolute
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				width: 18px
+				height: 18px
+				text-align: center
+				margin-left: 20px
+				font-size: 14px
+				line-height: 18px
+				background-color: #00b7f4
+				border: 2px solid #F4F5F7 
+				cursor: pointer  
 		&__item
 			margin-bottom: 30px
 			.avatar
@@ -553,13 +570,7 @@ body
 					&.shares
 						background-image: url(../images/shrs.png) 
 						padding-left: 36px
-			.time
-				display: inline-block
-				float: right
-				margin-top: 11px
-				width: 40px
-				height: 40px
-				background-image: url(../images/time.png)
+
 
 	.newsWrap
 		padding: 50px 175px 20px 24px
@@ -617,6 +628,8 @@ body
 		width: 100%
 	&.open-chat-box
 		display: inline-flex
+		.filmWrap .col-2x
+			width: 100%
 		.content-rgt
 			padding-top: 400px
 			position: relative
@@ -771,6 +784,10 @@ body
 		box-shadow: 0px 0px 84px 8px rgba(82,123,163,1);
 
 .sidebar-close
+	.deferredVideo-items__box
+		width: 360px
+	.deferredVideo-items__box .users
+		left: 18%
 	.hide-sidebar
 		left: 70px
 		top: 250px
@@ -871,14 +888,6 @@ body
 			.vid iframe, .vid video, .slider-video iframe, slider-video video
 				width: 400px
 				height: 300px
-			.like
-				width: 32px
-				height: 33px
-				background-image: url(../images/ld.png)
-				position: absolute
-				bottom: 10px
-				right: 17px
-				z-index: 2
 			.namber
 				width: 36px
 				height: 36px
@@ -1083,6 +1092,12 @@ body
 			background-image: url(../images/arrb.png)
 			
 .filmWrap
+	.mCSB_scrollTools .mCSB_draggerContainer
+		left: 0
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+		width: 14px
+		-webkit-border-radius: 0 
+		border-radius: 0 
 	.mCSB_scrollTools .mCSB_draggerRail
 		width: 14px
 	.mCustomScrollBox
@@ -1096,7 +1111,7 @@ body
 	.mCSB_scrollTools .mCSB_draggerRail
 		background-color: rgba(255,255,255,0.2) 
 	.chatWrap
-		width: 700px 
+		// width: 700px 
 		// height: 800px
 		-ms-overflow-y: hidden 
 		overflow-y: hidden 
@@ -1127,7 +1142,22 @@ body
 		.chatWrap-messBox__text
 			padding: 10px
 
-
+.like
+	width: 32px
+	height: 33px
+	background-image: url(../images/ld.png)
+	position: absolute
+	bottom: 10px
+	right: 17px
+	z-index: 2
+				
+.time
+	display: inline-block
+	float: right
+	margin-top: 11px
+	width: 40px
+	height: 40px
+	background-image: url(../images/time.png)
 .hov
 	position: absolute
 	left: 0
@@ -1140,5 +1170,77 @@ body
 	line-height: 20px
 	color: #FFF
 	background-color: rgba(0,0,0,0.5)  
+
+.page-film.chat-open
+	.content.open-chat-box .content-rgt
+		padding-top: 0
+	.chatWrap
+		position: static
+		
+.deferredVideo
+	.title
+		font-weight: 700 
+		font-size: 25px
+		text-align: right
+		color: #FFF 
+		margin-bottom: 30px
+		padding-right: 30px
+	&-items
+		margin-bottom: 60px
+		display: inline-flex
+		width: 100%
+		-webkit-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		&__box
+			width: 95%
+			height: 270px
+			-webkit-border-radius: 20px 
+			border-radius: 20px 
+			overflow: hidden
+			margin: auto
+			margin-bottom: 26px
+			position: relative
+			background-color: #010417 
+			.like
+				bottom: 24px
+			.users
+				position: absolute
+				bottom: 15px
+				width: 230px
+				margin: auto 
+				z-index: 1
+				left: 10%
+				&-avatar
+					display: inline-block
+					width: 44px
+					height: 44px
+					text-align: center
+					-webkit-border-radius: 50% 
+					border-radius: 50% 
+					overflow: hidden
+					margin-right: 13px
+					&:last-child
+						margin-right: 0
+			.name
+				font-size: 37px
+				text-align: center
+				position: absolute
+				width: 100%
+				z-index: 1
+				top: 40%
+				font-weight: 600
+				text-transform: uppercase
+			.vid
+				position: absolute
+				width: 100%
+				video, iframe
+					width: 100%
+			.time
+				margin-right: 20px
+				position: relative
+				z-index: 1 
+				.hov
+					left: -100px
 
 // @import "media";
