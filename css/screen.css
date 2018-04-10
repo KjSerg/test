@@ -1324,3 +1324,65 @@ body {
       z-index: 1; }
       .deferredVideo-items__box .time .hov {
         left: -100px; }
+
+.filmWrap .mCSB_scrollTools .mCSB_draggerRail {
+  width: 14px; }
+
+.filmWrap .mCustomScrollBox {
+  -ms-overflow-x: visible;
+  overflow-x: visible; }
+  .filmWrap .mCustomScrollBox::-webkit-scrollbar {
+    display: none; }
+
+.filmWrap .mCSB_dragger {
+  height: 57px !important;
+  background-color: #1A4B76; }
+
+.filmWrap .mCSB_scrollTools .mCSB_draggerRail {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.filmWrap .chatWrap {
+  -ms-overflow-y: hidden;
+  overflow-y: hidden;
+  position: static; }
+  .filmWrap .chatWrap .scrollCast {
+    height: 600px;
+    -ms-overflow-y: hidden;
+    overflow-y: hidden; }
+
+.filmWrap .links {
+  text-align: right;
+  margin-top: 20px; }
+  .filmWrap .links a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px; }
+    .filmWrap .links a:hover {
+      text-decoration: underline; }
+
+.filmWrap .chatWrap-messBox .chatWrap-messBox__text {
+  background: none; }
+
+.filmWrap .coments {
+  margin-top: 10px;
+  padding: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2); }
+  .filmWrap .coments .chatWrap-messBox {
+    margin-bottom: 0; }
+  .filmWrap .coments .chatWrap-messBox__text {
+    padding: 10px; }
+
+.hov {
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 150px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5); }
