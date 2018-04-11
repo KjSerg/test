@@ -1324,6 +1324,14 @@ body
 				width: 50%
 				float: left
 				margin-bottom: 20px
+				&.active
+					width: 100%
+					float: none
+					display: inline-block
+					.right
+						width: 86%
+						.text
+							height: 100%
 				.right
 					width: 250px
 					// height: 100px
@@ -1350,6 +1358,7 @@ body
 						font-weight: 700
 						line-height: 15px
 						text-align: justify 
+						cursor: pointer
 
 				.left
 					width: 75px
@@ -1379,6 +1388,7 @@ body
 							border-radius: 50%  
 						img
 							max-width: 100% 
+
 		&__head
 			width: 100%
 			height: 50px
@@ -1473,6 +1483,33 @@ body
 			font-size: 19px
 			margin-bottom: 20px 
 
+.smile
+	position: absolute
+	display: inline-block
+	width: 30px
+	height: 26px
+	background-image: url(../images/smile.png)
+	top: 20px
+	right: 170px
+	background-repeat: no-repeat
+	background-position: center
+.file-container
+	background-repeat: no-repeat
+	background-position: center
+	width: 30px
+	height: 24px
+	display: inline-block
+	position: absolute
+	top: 20px
+	&.foto
+		background-image: url(../images/foto.png)
+		right: 120px
+	&.file
+		background-image: url(../images/file.png)
+		right: 80px
+	input
+		display: none
+
 .filmContainer
 	width: 1280px
 	margin: 0 auto
@@ -1493,6 +1530,7 @@ body
 			margin-left: calc((100% - 242px) / 2) 
 		&-lbl
 			display: inline-block
+			position: relative
 			width: 100%
 			height: 236px
 			padding: 10px
@@ -1502,6 +1540,8 @@ body
 			border-radius: 20px 
 			margin-bottom: 30px 
 			background-color: rgba(255,255,255, 0.1) 
+			.smile, .file-container
+				top: 80%
 			&__txtar
 				color: #b0bbcd
 				width: 100%
@@ -1585,6 +1625,8 @@ body
 		width: 95%
 	.content.open-chat-box .filmContainer-box .control-panel-mini
 		bottom: 10px
+
+
 
 
 .links

@@ -145,4 +145,12 @@ $(function () {
 		$(this).parents('body').find('.content-wrap').hide();
 		$(this).parents('body').find('.searchWrap').show();
 	});
+	$('.reviewBox-filter__box .item .right .text').click(function(event) {
+		/* Act on the event */
+		$('.reviewBox-filter__box .item .right .text').parents('.item').removeClass('active');
+		$(this).parents('.item').addClass('active');
+		// $(this).parents('.item').prev('.item').css({
+		// 	'width': '100%'
+		// });
+	});
 });
