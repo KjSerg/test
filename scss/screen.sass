@@ -1326,12 +1326,25 @@ body
 				width: 50%
 				float: left
 				margin-bottom: 20px
+				.cls
+					display: none
 				&.active
 					width: 100%
 					float: none
 					display: inline-block
 					.right
+						.cls
+							display: inline-block
+							font-size: 20px
+							cursor: pointer
+							position: absolute
+							top: 5px
+							text-decoration: none
+							right: 10px
+							color: #000
 						width: 86%
+						padding: 20px 
+						background-color: rgba(255,255,255,0.4) 
 						.text
 							height: 100%
 				.right
@@ -1343,6 +1356,7 @@ body
 					margin-left: 20px
 					padding: 14px 20px 
 					background-color: rgba(255,255,255,0.1) 
+					position: relative
 					.links
 						line-height: 20px
 						margin-top: 5px
@@ -1354,7 +1368,7 @@ body
 						-o-background-size: 22% 
 						background-size: 22% 
 					.text
-						height: 56px
+						height: 60px
 						overflow: hidden
 						font-size: 12.7px 
 						font-weight: 700
@@ -1653,6 +1667,10 @@ body
 			padding-left: 36px
 			
 .page-videoPlay
+	.sidebar
+		background-color: rgba(34, 69, 121, 0.8)
+		padding-left: 5px
+		padding-right: 5px 
 	.content.open-chat-box .content-rgt
 		padding-top: 0
 	&.sidebar-close .reviewBox-traler__video
@@ -1672,5 +1690,8 @@ body
 		z-index: 1 
 		video, iframe
 			margin-top: 0
+
+.filmWrap .links
+	float: none
 
 // @import "media";

@@ -1409,12 +1409,25 @@ body {
         width: 50%;
         float: left;
         margin-bottom: 20px; }
+        .reviewBox-filter__box .item .cls {
+          display: none; }
         .reviewBox-filter__box .item.active {
           width: 100%;
           float: none;
           display: inline-block; }
           .reviewBox-filter__box .item.active .right {
-            width: 86%; }
+            width: 86%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.4); }
+            .reviewBox-filter__box .item.active .right .cls {
+              display: inline-block;
+              font-size: 20px;
+              cursor: pointer;
+              position: absolute;
+              top: 5px;
+              text-decoration: none;
+              right: 10px;
+              color: #000; }
             .reviewBox-filter__box .item.active .right .text {
               height: 100%; }
         .reviewBox-filter__box .item .right {
@@ -1424,7 +1437,8 @@ body {
           float: left;
           margin-left: 20px;
           padding: 14px 20px;
-          background-color: rgba(255, 255, 255, 0.1); }
+          background-color: rgba(255, 255, 255, 0.1);
+          position: relative; }
           .reviewBox-filter__box .item .right .links {
             line-height: 20px;
             margin-top: 5px; }
@@ -1435,7 +1449,7 @@ body {
             -webkit-background-size: 22%;
             background-size: 22%; }
           .reviewBox-filter__box .item .right .text {
-            height: 56px;
+            height: 60px;
             overflow: hidden;
             font-size: 12.7px;
             font-weight: 700;
@@ -1726,6 +1740,11 @@ body {
       background-image: url(../images/shrs.png);
       padding-left: 36px; }
 
+.page-videoPlay .sidebar {
+  background-color: rgba(34, 69, 121, 0.8);
+  padding-left: 5px;
+  padding-right: 5px; }
+
 .page-videoPlay .content.open-chat-box .content-rgt {
   padding-top: 0; }
 
@@ -1749,3 +1768,6 @@ body {
   z-index: 1; }
   .page-videoPlay .videoWrap video, .page-videoPlay .videoWrap iframe {
     margin-top: 0; }
+
+.filmWrap .links {
+  float: none; }
