@@ -385,7 +385,8 @@ body {
   padding-top: 115px;
   color: #FFF;
   width: 240px;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
   .sidebar.hide {
     display: none; }
   .sidebar-title {
@@ -1734,7 +1735,10 @@ body {
 
 .page-videoPlay .descriptionWrap {
   margin-bottom: 30px;
-  margin-top: 0; }
+  margin-top: 0;
+  width: 100%; }
+  .page-videoPlay .descriptionWrap .links .links-item {
+    margin-right: 25px; }
 
 .page-videoPlay .content {
   margin-top: 700px; }
