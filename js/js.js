@@ -2,14 +2,14 @@ $(function () {
 	$('.vase').not('.vase-one').click(function(event) {
 		/* Act on the event */
 		event.preventDefault();
-		$('.vase').not($(this)).removeClass('active');
+		$(this).parents('.sidebar-friends').find('.vase').not($(this)).removeClass('active');
 		if (!$(this).hasClass('active')) {
 			$(this).addClass('active');
-			$('.sidebar-cards').addClass('show');
+			$(this).closest('.sidebar-friends').siblings('.sidebar-cards').addClass('show');
 		}
 		else{
 			$(this).removeClass('active');
-			$('.sidebar-cards').removeClass('show');
+			$(this).closest('.sidebar-friends').siblings('.sidebar-cards').removeClass('show');
 		}
 	});
 	$('.vase-one').not('.vase-two').click(function(event) {
